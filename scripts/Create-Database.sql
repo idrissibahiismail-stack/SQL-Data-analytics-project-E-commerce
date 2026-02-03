@@ -1,15 +1,18 @@
 /*
 =============================================================
-Create Database and Schemas
+Database and Schema Initialization
 =============================================================
-Script Purpose:
-    This script creates a new database named 'DataWarehouseAnalytics' after checking if it already exists. 
-    If the database exists, it is dropped and recreated. Additionally, this script creates a schema called gold
-	
+Purpose:
+    This script initializes the data warehouse environment by creating a database 
+    named 'DataWarehouseAnalytics'. Before creation, it checks whether the database 
+    already exists. If it does, the existing database is dropped and recreated.
+    The script also creates the 'gold' schema used for analytics-ready tables.
+
 WARNING:
-    Running this script will drop the entire 'DataWarehouseAnalytics' database if it exists. 
-    All data in the database will be permanently deleted. Proceed with caution 
-    and ensure you have proper backups before running this script.
+    Executing this script will permanently remove the existing 
+    'DataWarehouseAnalytics' database if it is present.
+    All data stored in the database will be lost.
+    Ensure that all required backups are completed before running this script.
 */
 
 USE master;
